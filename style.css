@@ -1,0 +1,141 @@
+body {
+	background-color:lightgrey;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+	text-align: center;
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+h3 {
+	font-family: 'Oswald', sans-serif;
+}
+b {
+	color: #0066CC;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+.center {
+	margin:0 auto;
+}
+
+
+/* navigation bar */
+
+#navbar ul {
+	list-style-type: none;
+	bottom:0;
+	margin: 0 auto;
+	padding:0;
+	position: fixed;
+
+	width: 100%;
+	background-color: #0066CC;
+	height: 50px;
+	z-index:9999;
+
+
+	}
+#navbar li {
+	float: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.4em;
+
+
+}
+#navbar a:link, a:visited {
+	display: block;
+	width: 80px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px;
+
+}
+#navbar a:hover, a:active {
+	background-color: lightblue;
+}
+
+/* each slide */
+.page {
+	height: 600px;
+	padding: 80px 10% 20px 10%;
+	margin: 0;
+}
+
+/* Why should you care about sleep deprivation?*/
+#top-header {
+	position: fixed;
+	top:0;
+	padding:0;
+	height: 70px;
+	width: 100%;
+	background-color: #000099;
+	color: #FFF;
+	letter-spacing: 4px;
+}
+/* slide 1 */
+#intro{
+	background: url('./img/sleepy_dog_edited.jpg') 50% 0 no-repeat fixed;
+	background-size: cover;
+	width: 100%;
+	color:white;
+	padding: 200px 0 200px 0;
+}
+#dangers {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: #FFF;
+	margin:0;
+	padding:0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: lighter;
+}
+#sleep {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 120px;
+	text-align: center;
+	color: #FFF;
+	padding:0;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	position: relative;
+	top: -30px;
+}
+#deprivation {
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	color: #FFF;
+	padding:0;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	position: relative;
+	top: -70px;
+}
+
+/*subsequent slides */
+
+#page-two {
+	background-color: purple;
+}
+#page-three {
+	background-color: grey;
+}
+#page-four {
+	background: url('./img/food.jpeg') 50% 0 no-repeat fixed;
+	background-size: cover;
+}

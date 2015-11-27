@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).ready(function() {
+	  $('a[href*=#]').each(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	    && location.hostname == this.hostname
+	    && this.hash.replace(/#/,'') ) {
+	      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+	      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+	       if ($target) {
+	         var targetOffset = $target.offset().top;
+	         $(this).click(function() {
+	           $('html, body').animate({scrollTop: targetOffset}, 400);
+	           return false;
+	         });
+	      }
+	    }
+	  });
+	});
+	</script>
+	<title>The Dangers of Sleep Deprivation</title>
+</head>
+<body>
+<div id="top-header">
+	<h2>Why should <i>you</i> care about sleep?</h2>
+</div>
+
+<div id="navbar">
+	<ul>
+	     <li><a href="#1">One</a></li>
+	     <li><a href="#2">Two</a></li>
+	     <li><a href="#3">Three</a></li>
+	     <li><a href="#4">Four</a></li>
+	     <li><a href="#5">Five</a></li>
+	     <li><a href="#6">Six</a></li>
+	</ul>
+</div>
+
+
+
+<a id="1" class="smooth"></a>
+<div id="intro" class="page">
+	<div id="dangers">The Dangers of</div>
+	<div id="sleep">Sleep</div>
+	<div id="deprivation">Deprivation</div>
+</div>
+
+
+<a id="2" class="smooth"></a>
+<div id="page-two" class="page">
+	<a id="two" class="smooth"></a>
+	<h3>Lack of sleep could make you sick.</h3>
+	<p>In one study, healthy subjects were immunized against the flu. The control group slept normally; the other group was sleep deprived (4 hrs/night for six nights).</p>
+	<p>Subjects were then tested to assess how strong the body's immune reaction was. 10 days later, the antibody response in the sleep-deprivation group was <b>less than 50% of normal controls</b>.</p>
+</div>
+
+<a id="3" class="smooth"></a>
+<div id="page-three" class="page">
+	<h3>Lack of sleep could make you seriously sick.</h3>
+	<p>Your body contains natural killer cells that help with eliminating cancerous cells. One study showed that 4 hours of sleep reduction decreased the amount of natural killer cells in the body by <b>70%</b>.</p>
+	<p>This means that following sleep deprivation, the body is less able to fend off cancerous cells, thus increasing the chances of having cancer.</p>
+</div>
+
+
+<a id="4" class="smooth"></a>
+<div id="page-four" class="page">
+	
+	<h3>Lack of sleep could make you overweight.</h3>
+	<p>Leptin and Ghrelin are the "hunger hormones" that regulate appetite. </p>
+	<b>Leptin</b>: Inhibits appetite<br>
+	<b>Ghrelin</b>: Increases appetite<br>
+	<p>Studies show that sleep loss decreases leptin and increases ghrelin, causing an increase in the <b>subjective feeling of hunger</b> and increasing cravings for carb-rich foods.</p>
+</div>
+
+<a id="5" class="smooth"></a>
+<div id="page-five" class="page">
+	
+	<h2>Lack of sleep could lead to global catastrophe. Don't be one of these people!</h2>
+	<h3>Chernobyl</h3>
+	<p><b>April 1986</b>: Sleep-deprived set operators neglected to turn on several safety features during a routine shutdown and test of reactors. This resulted in a <b>reactor meltdown</b> which caused 31 deaths shortly after the explosion. It is estimated that the radiation from the meltdown was <b>100 times more powerful than the atomic bombs dropped in World War II</b>. Thousands more have died from the long-term effects of the radiation.</p>
+
+	<h3>Exxon Valdez</h3>
+	<p><b>March 1989</b>: An oil tanker ran aground off Alaska, resulting in tremendous damage to the envinronment. What happened? The captain had turned over command to his first mate, who was sleep deprived. He had only slept <b>6 hours in the previous 3 days</b>! This catastrophe led to the deaths of around 250,000-500,000 birds, 2,800-5,000 sea otters, and the destruction of billions of salmon eggs. </p>
+
+</div>
+
+<a id="6" class="smooth"></a>
+<div id="page-six" class="page">
+	<a id="six" class="smooth"></a>
+	<h3>How long can I go without sleep?</h3>
+	<p><b>1959</b>: Peter Tripp, a New York DJ, stayed awake for 8 days straight for a charity "wakeathon".</p>
+
+	<p>Peter Tripp was a normal, well-to-do guy according to his wife, barber, friends, and thousands of radio listeners.</p>
+	<p>By day 4 of the "wakeathon", he started suffering from <b>delusions and hallucinations</b>. He saw spiders in his shoes and claimed that the staff were trying to poison him. He continued to display signs of psychosis during the time he was awake.</p>
+	<p>After 8 days, he slept for 22 hours straight and woke up, apparently back to normal...</p>
+	<p><b>Or not.</b> Peter Tripp continued to display behavioral and psychotic problems for years. He lost his job, his marriage failed, and he was last heard of selling books door-to-door in the Midwest.</p>
+
+</div>
+<a id="7" class="smooth"></a>
+<div id="page-seven" class="page">
+	<a id="seven" class="smooth"></a>
+	<p>This website was created by Qinqiu Chen. All information is from Psych 133 (Psychology of Sleep), UC Berkeley Fall 2015.</p>
+
+</div>
+</body>
+</html>
