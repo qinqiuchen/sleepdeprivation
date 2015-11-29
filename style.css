@@ -196,5 +196,9 @@ ul {
 	margin-right: auto;
 }
 #page-eight {
-	background-color: purple;
+	background-color: #006992;
+	color: white;
+}
+#page-eight b {
+	color: lightblue;
 }
